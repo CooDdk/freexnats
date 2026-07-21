@@ -1692,12 +1692,13 @@ func (c *messagesContentFocusItem) Focus() { c.page.contentFocused = true }
 func (c *messagesContentFocusItem) Blur()  { c.page.contentFocused = false }
 
 func (c *messagesContentFocusItem) Activate() tea.Cmd {
-	// Enter refreshes the current message — cheap way to re-load if the
-	// stream changed under us.
-	if c.page.selectedStream == nil {
+	// Enter opens the full-page payload viewer.
+	if c.page.currentMsg == nil {
 		return nil
 	}
-	return c.page.loadCurrentMsgCmd()
+	c.page.detailScroll = 0
+	c.page.mode = ModeMessageDetail
+	return nil
 }
 
 func (c *messagesContentFocusItem) HandleArrow(dir focus.Direction) (tea.Cmd, bool) {
