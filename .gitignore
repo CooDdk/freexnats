@@ -19,3 +19,6 @@ Thumbs.db
 
 # Local dev
 .claude/
+
+# Docs (design notes, not for public repo)
+docs/
