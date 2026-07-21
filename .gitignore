@@ -1,0 +1,21 @@
+# Binaries
+freexnats
+freexnats.exe
+/dist/
+/bin/
+
+# Local logs
+*.log
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local dev
+.claude/
