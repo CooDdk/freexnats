@@ -2,6 +2,8 @@
 
 一个跑在终端里的 NATS JetStream 管理器。查看 Stream / Consumer / KV、发布与浏览消息、实时 Tail 订阅，全键盘 + 全鼠标交互。
 
+![freexnats preview](screenshots/preview.png)
+
 ## 安装
 
 **macOS / Linux**
